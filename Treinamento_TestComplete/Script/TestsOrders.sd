@@ -1,0 +1,20 @@
+﻿uses
+  AppActions,
+  MainPage,
+  OrderPage,
+  AssertUtils;
+
+procedure TestValidarDesconto; //DATADRIVEN
+const
+  quantidade = 4;
+  desconto = '0%';
+begin
+  AppActions.AppOrdersRun;
+  MainPage.AcessarMenu('Orders|New order...');
+  OrderPage.escolherProduto('FamilyAlbum');
+  OrderPage.digitarQuantidade(quantidade);
+  OrderPage.digitarData('07/06/2019'); 
+  AssertUtils.equals(desconto, OrderPage.obterDesconto); 
+  
+  AppActions.AppOrdersClose;   
+end;

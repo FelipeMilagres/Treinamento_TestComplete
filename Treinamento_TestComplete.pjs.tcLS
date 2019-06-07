@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
+				<Prp name="default project" type="S" value="{50DDA90A-AC4C-4B5F-A4C4-88B0D43DD5B4}"/>
+			</Node>
+			<Node name="{50dda90a-ac4c-4b5f-a4c4-88b0d43dd5b4}">
+				<Prp name="relpath" type="S" value="Treinamento_TestComplete\Treinamento_TestComplete.mds.tcLS"/>
+			</Node>
+			<Node name="envmngrlogs">
+				<Prp name="key" type="S" value="{74D2A64A-E4A4-4A14-B4DE-44B2D1FB5363}"/>
+			</Node>
+			<Node name="logs">
+				<Prp name="key" type="S" value="{79DFDA1E-26F3-4E66-9502-9698342CEABB}"/>
+				<Prp name="relpath" type="S" value="Log"/>
+			</Node>
+			<Node name="variables"/>
+		</Node>
+		<Prp name="signature" type="S" value="{71078212-FAEB-4856-A901-B237C89E6B5C}"/>
+	</Node>
+</Nodes>

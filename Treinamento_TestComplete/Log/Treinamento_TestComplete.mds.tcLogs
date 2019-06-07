@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="folders"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43623.601353206"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{3D4EECA6-6ED8-4E56-A821-D6DE3D2AD3D0}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [TestsOrders\TestValidarDesconto]"/>
+				<Prp name="relpath" type="S" value="07_06_2019_14_25_56_917\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43623.6051720833"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{157DD897-5EF9-40F5-971C-D95A4713A94D}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [TestsOrders\TestValidarDesconto]"/>
+				<Prp name="relpath" type="S" value="07_06_2019_14_31_26_868\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43623.6061164815"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{F402D45D-9EA3-4116-BF60-40460803004B}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [TestsOrders\TestValidarDesconto]"/>
+				<Prp name="relpath" type="S" value="07_06_2019_14_32_48_464\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43623.622574213"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{5ECDADE0-7E7E-4E2F-9BF1-596EE2F6988B}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [TestsOrders\TestValidarDesconto]"/>
+				<Prp name="relpath" type="S" value="07_06_2019_14_56_30_412\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43623.6230651968"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{49F5B675-57A8-4A00-AA9B-CBB976F0F005}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [TestsOrders\TestValidarDesconto]"/>
+				<Prp name="relpath" type="S" value="07_06_2019_14_57_12_833\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43623.6240370718"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{705F5DB6-CBD4-43AE-AB35-075D0A1DDCF9}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [TestsOrders\TestValidarDesconto]"/>
+				<Prp name="relpath" type="S" value="07_06_2019_14_58_36_803\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43623.6255363773"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{2F246D19-70C8-43E8-8B65-EB3D75C34C31}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [TestsOrders\TestValidarDesconto]"/>
+				<Prp name="relpath" type="S" value="07_06_2019_15_00_46_343\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0007">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43623.6263205208"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{6FA7FF53-3B54-4742-A3F0-E00C0912C065}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [TestsOrders\TestValidarDesconto]"/>
+				<Prp name="relpath" type="S" value="07_06_2019_15_01_54_93\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0008">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43623.6269135764"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{02112FAE-A1B0-4149-BCB0-8BFC3525B7CC}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [TestsOrders\TestValidarDesconto]"/>
+				<Prp name="relpath" type="S" value="07_06_2019_15_02_45_333\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0009">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43623.6450202662"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{6407515E-F56F-404A-BF62-752E060219A9}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [TestsOrders\TestValidarDesconto]"/>
+				<Prp name="relpath" type="S" value="07_06_2019_15_28_49_751\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0010">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43623.6455363773"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{807E6AC3-835F-4F5F-BAA6-81AC05B6BE4D}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [TestsOrders\TestValidarDesconto]"/>
+				<Prp name="relpath" type="S" value="07_06_2019_15_29_34_343\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

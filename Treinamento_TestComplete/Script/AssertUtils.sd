@@ -1,0 +1,7 @@
+﻿procedure equals(valorUm, valorDois);
+begin
+  if valorUm = valorDois then  
+    Log.Checkpoint('O '+valorUm+' é igual a '+valorDois+'!')    
+  else
+    Log.Error('O '+valorUm+' não é igual a '+valorDois+'!')   
+end;

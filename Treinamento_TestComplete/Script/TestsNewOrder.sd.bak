@@ -1,0 +1,13 @@
+﻿uses
+  AppActions,
+  MainPage,
+  OrderPage;
+
+procedure TestNewOrder;
+begin
+  AppActions.AppOrdersRun;
+  MainPage.AcessarMenu('Orders|New order...');
+  OrderPage.escolherProduto('FamilyAlbum');
+  OrderPage.digitarQuantidade(4);
+  Log.Message(OrderPage.obterPrecoPorUnidade);
+end;

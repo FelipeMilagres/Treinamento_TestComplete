@@ -1,0 +1,9 @@
+﻿procedure AppOrdersRun();
+begin
+  TestedApps.Orders.Run();
+end;
+
+procedure AppOrdersClose();
+begin
+  TestedApps.Orders.Terminate; //Close;
+end;

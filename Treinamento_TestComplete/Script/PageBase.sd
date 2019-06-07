@@ -1,0 +1,29 @@
+﻿procedure clicar(elemento);
+begin
+  elemento.Click;
+end;
+
+procedure clicarComboBox(elemento, item);
+begin
+  elemento.ClickItem(item);
+end;
+
+procedure sendKeys(elemento, texto);
+begin
+  elemento.Keys(texto);
+end;
+
+procedure setText(elemento, texto);
+begin
+  elemento.SetText(texto);
+end;
+
+function obterTextoElemento(elemento) : string;
+begin
+  result := elemento.wText;
+end;
+
+function modificarData(elemento, data);
+begin
+  elemento.wDate := data;
+end;
