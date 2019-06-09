@@ -1,35 +1,34 @@
-﻿uses
-  PageBase;
-
-const
+﻿const
   OrderForm = Aliases.Orders.OrderForm;
   
-procedure escolherProduto(produto);
+procedure EscolherProduto(pProduto);
 begin
-  clicarComboBox(OrderForm.Group.ProductNames, produto)
+  OrderForm.Group.ProductNames.ClickItem(pProduto)
 end;
 
-procedure digitarQuantidade(quantidade);
+procedure DigitarQuantidade(pQuantidade);
 begin
-  setText(OrderForm.Group.Quantity, quantidade);
+  OrderForm.Group.Quantity.setText(pQuantidade);
+  OrderForm.Group.Quantity.Keys('[Tab]');
 end;
 
-function obterPrecoPorUnidade : string;
+function ObterPrecoPorUnidade;
 begin
-  result := obterTextoElemento(OrderForm.Group.Price);
+  result := OrderForm.Group.Price.wText
 end;
 
-function obterDesconto : string;
+function ObterDesconto;
 begin
-  result := obterTextoElemento(OrderForm.Group.Discount);
+  result := OrderForm.Group.Discount.wText;
 end;
 
-function obterTotal : string;
+function ObterValorTotal;
 begin
-  result := obterTextoElemento(OrderForm.Group.Total);
+  OrderForm.Group.Total.Click;
+  result := OrderForm.Group.Total.wText;
 end;
 
-procedure digitarData(data);
+procedure DigitarData(pData);
 begin
-  modificarData(OrderForm.Group.Date);
+  OrderForm.Group.Date.wDate := pData;
 end;

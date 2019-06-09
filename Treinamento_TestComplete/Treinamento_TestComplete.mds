@@ -11,7 +11,32 @@
 		<children />
 	</testItems>
 	<variables key="{77834127-2878-4E02-88AD-406ABA4A3C06}">
-		<data Version="3" />
+		<data Version="3">
+			<Items>
+				<Variable Name="InformacoesProdutos" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
+					<DefValue RowCount="6" ColumnCount="3">
+						<Columns ColumnName0="Produto" ColumnName1="Quantidade" ColumnName2="ValorTotal" />
+						<Row No="0" Cell0="4D0079004D006F006E0065007900" Cell1="3100" Cell2="310030003000" />
+						<Row No="1" Cell0="4D0079004D006F006E0065007900" Cell1="3400" Cell2="340030003000" />
+						<Row No="2" Cell0="460061006D0069006C00790041006C00620075006D00" Cell1="3100" Cell2="38003000" />
+						<Row No="3" Cell0="460061006D0069006C00790041006C00620075006D00" Cell1="3400" Cell2="330032003000" />
+						<Row No="4" Cell0="530063007200650065006E0053006100760065007200" Cell1="3100" Cell2="32003000" />
+						<Row No="5" Cell0="530063007200650065006E0053006100760065007200" Cell1="3400" Cell2="38003000" />
+					</DefValue>
+				</Variable>
+				<Variable Name="InformacoesDesconto" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
+					<DefValue RowCount="6" ColumnCount="3">
+						<Columns ColumnName0="Produto" ColumnName1="Quantidade" ColumnName2="Desconto" />
+						<Row No="0" Cell0="4D0079004D006F006E0065007900" Cell1="3100" Cell2="30002500" />
+						<Row No="1" Cell0="4D0079004D006F006E0065007900" Cell1="31003000" Cell2="38002500" />
+						<Row No="2" Cell0="460061006D0069006C00790041006C00620075006D00" Cell1="3100" Cell2="30002500" />
+						<Row No="3" Cell0="460061006D0069006C00790041006C00620075006D00" Cell1="31003000" Cell2="310035002500" />
+						<Row No="4" Cell0="530063007200650065006E0053006100760065007200" Cell1="3100" Cell2="30002500" />
+						<Row No="5" Cell0="530063007200650065006E0053006100760065007200" Cell1="31003000" Cell2="310030002500" />
+					</DefValue>
+				</Variable>
+			</Items>
+		</data>
 	</variables>
 	<settings key="{0BD532BF-DA9C-4F44-8185-E96737F8092A}">
 		<settingsVersion value="14.10" />
@@ -617,6 +642,7 @@
 		<setting name="ZFJ_JiraPassword" type="5" value="" />
 		<setting name="ZFJ_JiraProject" type="5" value="" />
 		<setting name="ZFJ_JiraUrl" type="5" value="" />
+		<setting name="ZFJ_TestIssueTypeName" type="5" value="Test" />
 		<setting name="ZFJ_Version" type="5" value="" />
 		<setting name="ZFJ_ZephyrAccessKey" type="5" value="" />
 		<setting name="ZFJ_ZephyrSecretKey" type="5" value="" />

@@ -1,7 +1,7 @@
 ﻿const 
   MainMenu = Aliases.Orders.MainForm;
   
-procedure AcessarMenu(menu);
+procedure AcessarMenu(pMenu);
 begin
-  MainMenu.MainMenu.Click(menu);
+  MainMenu.MainMenu.Click(pMenu);
 end;

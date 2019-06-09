@@ -1,7 +1,23 @@
-﻿procedure equals(valorUm, valorDois);
+﻿procedure equals(pValorUm, pValorDois);
 begin
-  if valorUm = valorDois then  
-    Log.Checkpoint('O '+valorUm+' é igual a '+valorDois+'!')    
+  if aqConvert.VarToStr(pValorUm) = aqConvert.VarToStr(pValorDois) then  
+    Log.Checkpoint('O '+pValorUm+' é igual a '+pValorDois+'!')    
   else
-    Log.Error('O '+valorUm+' não é igual a '+valorDois+'!')   
+    Log.Error('O '+pValorUm+' não é igual a '+pValorDois+'!')   ;
+end;
+
+procedure isTrue(pCondicao);
+begin
+  if pCondicao then
+    Log.Checkpoint('A condição é verdadeira!')
+  else
+    Log.Error('A condição é falsa!');
+end;
+
+procedure isFalse(pCondicao);
+begin
+  if not pCondicao then
+    Log.Checkpoint('A condição é falsa!')
+  else
+    Log.Error('A condição é verdadeira!');
 end;

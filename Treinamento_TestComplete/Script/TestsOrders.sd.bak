@@ -1,20 +1,48 @@
 ﻿uses
-  AppActions,
+  AppUtils,  
   MainPage,
   OrderPage,
-  AssertUtils;
-
-procedure TestValidarDesconto; //DATADRIVEN
-const
-  quantidade = 4;
-  desconto = '0%';
-begin
-  AppActions.AppOrdersRun;
-  MainPage.AcessarMenu('Orders|New order...');
-  OrderPage.escolherProduto('FamilyAlbum');
-  OrderPage.digitarQuantidade(quantidade);
-  OrderPage.digitarData('07/06/2019');
-  AssertUtils.equals(desconto, OrderPage.obterDesconto); 
+  AssertUtils;  
   
-  AppActions.AppOrdersClose;   
+var
+  count : int;  
+  
+procedure TesteValidarPrecoTotal;
+const
+  InformacoesProdutos = Project.Variables.InformacoesProdutos;
+begin
+  //Before
+  AppOrdersRun;
+  AcessarMenu('Orders|New order...');
+  
+  for count := 0 to InformacoesProdutos.RowCount - 1 do
+  begin
+    EscolherProduto(InformacoesProdutos.Produto[count]);
+    DigitarQuantidade(InformacoesProdutos.Quantidade[count]);  
+    AssertUtils.equals(InformacoesProdutos.ValorTotal[count], obterValorTotal);
+  end;
+  
+  //After
+  ClicarCancelar;
+  AppOrdersClose;
+end;
+
+procedure TesteValidarDescontoPorQuantidade;
+const
+  InformacoesDesconto = Project.Variables.InformacoesDesconto;
+begin
+  //Before
+  AppOrdersRun;
+  AcessarMenu('Orders|New order...');
+  
+  for count := 0 to InformacoesDesconto.RowCount - 1 do
+  begin
+    EscolherProduto(InformacoesDesconto.Produto[count]);
+    DigitarQuantidade(InformacoesDesconto.Quantidade[count]);  
+    AssertUtils.equals(InformacoesDesconto.Desconto[count], ObterDesconto);
+  end;
+  
+  //After
+  ClicarCancelar;
+  AppOrdersClose;
 end;

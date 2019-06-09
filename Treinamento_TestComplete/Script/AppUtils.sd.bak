@@ -1,0 +1,10 @@
+﻿procedure AppOrdersRun;
+begin
+  TestedApps.Orders.Run;
+end;
+
+procedure AppOrdersClose;
+begin
+  TestedApps.Orders.Close;
+  Aliases.Orders.MainForm.Close;
+end;

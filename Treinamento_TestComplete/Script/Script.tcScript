@@ -7,15 +7,12 @@
 		</folder>
 		<folder name="Utils">
 			<child name="GravadorUtils" key="{BC9B1580-5916-4294-AF84-5442232CEC59}" path="GravadorUtils.sd" />
-			<child name="AppActions" key="{2E0DDFCF-5247-489B-B226-7D87246B9416}" path="AppActions.sd" />
+			<child name="AppUtils" key="{2E0DDFCF-5247-489B-B226-7D87246B9416}" path="AppUtils.sd" />
 			<child name="AssertUtils" key="{E3E796FC-0044-4C3E-A644-DE461A2C36E5}" path="AssertUtils.sd" />
+			<child name="GeradorUtils" key="{F55959F9-0F8B-4A1B-8CE6-270ECAE96727}" path="GeradorUtils.sd" />
 		</folder>
 		<folder name="Tests">
 			<child name="TestsOrders" key="{87E8530A-7B54-4088-A981-16FB3BABE08A}" path="TestsOrders.sd" />
-		</folder>
-		<folder name="Flows" />
-		<folder name="Bases">
-			<child name="PageBase" key="{D0889B34-4BD6-4B76-9091-AD70E428B14C}" path="PageBase.sd" />
 		</folder>
 	</children>
 </Root>
