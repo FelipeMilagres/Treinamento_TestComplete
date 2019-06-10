@@ -1,4 +1,4 @@
 ﻿procedure Test1;
 begin
-  
+  Aliases.Orders.MainForm.OrdersGrid.ClickItem('fere', 'MyMoney', '1');
 end;

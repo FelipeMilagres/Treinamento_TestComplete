@@ -17,7 +17,7 @@ begin
   result := OrderForm.Group.Price.wText
 end;
 
-function ObterDesconto;
+function ObterValorDesconto;
 begin
   result := OrderForm.Group.Discount.wText;
 end;
@@ -33,7 +33,56 @@ begin
   OrderForm.Group.Date.wDate := pData;
 end;
 
+procedure DigitarNome(pNome);
+begin
+  OrderForm.Group.Customer.SetText(pNome);
+end;
+
+procedure DigitarEndereco(pEndereco);
+begin
+  OrderForm.Group.Street.SetText(pEndereco)
+end;
+
+procedure DigitarCidade(pCidade);
+begin
+  OrderForm.Group.City.SetText(pCidade);
+end;
+
+procedure DigitarEstado(pEstado);
+begin
+  OrderForm.Group.State.SetText(pEstado);
+end;
+
+procedure DigitarCEP(pCep);
+begin
+  OrderForm.Group.Zip.SetText(pCep);
+end;
+
+procedure SelecionarCartao(pCartao);
+begin
+  case pCartao of
+   'Visa'             : OrderForm.Group.Visa.Click;
+   'MasterCard'       : OrderForm.Group.MasterCard.Click;
+   'American Express' : OrderForm.Group.AE.Click;
+  end;
+end;
+
+procedure DigitarNumeroCartao(pNumeroCartao);
+begin
+  OrderForm.Group.CardNo.SetText(pNumeroCartao);
+end;
+
+procedure DigitarDataExpiracao(pDataExpiracao);
+begin
+  OrderForm.Group.ExpDate.wDate := pDataExpiracao;
+end;
+
+procedure ClicarOK;
+begin
+   OrderForm.ButtonOK.Click;
+end;
+
 procedure ClicarCancelar;
 begin
-  Aliases.Orders.OrderForm.ButtonCancel.Click;
+  OrderForm.ButtonCancel.Click;
 end;

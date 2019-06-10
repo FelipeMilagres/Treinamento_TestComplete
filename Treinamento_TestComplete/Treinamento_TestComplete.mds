@@ -8,7 +8,33 @@
 	</children>
 	<config language="{9E432E59-33EF-4EAA-95C6-63FC35AF69EE}" />
 	<testItems key="{DC592372-12C3-4AE9-AD8D-656B0474A98B}" version="14">
-		<children />
+		<children>
+			<testItem name="Testes Tela New Order" key="{5E0615F8-C3A3-41AB-BB30-4C7A79A5D8C3}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<children>
+					<testItem name="TesteCadastroEncomenda" key="{4458EED8-5FFE-4DAD-A1A4-C006825ACFCC}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteCadastroEncomenda" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="TesteEditarCadastroEncomenda" key="{C0096B9E-10E9-4C72-8C1A-60A8A673AE11}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteEditarCadastroEncomenda" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="TesteExcluirCadastroEncomenda" key="{87337AA4-67DF-449A-AA0E-A4DC6CF3DA16}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteExcluirCadastroEncomenda" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="TesteValidarDescontoPorQuantidade" key="{26A2C21F-C8B0-4F70-BAFA-70B29585F6AF}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteValidarDescontoPorQuantidade" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="TesteValidarPrecoTotal" key="{DC77244F-8E4C-452E-BBAA-F1AE623D3930}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteValidarPrecoTotal" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
+		</children>
 	</testItems>
 	<variables key="{77834127-2878-4E02-88AD-406ABA4A3C06}">
 		<data Version="3">
@@ -22,17 +48,6 @@
 						<Row No="3" Cell0="460061006D0069006C00790041006C00620075006D00" Cell1="3400" Cell2="330032003000" />
 						<Row No="4" Cell0="530063007200650065006E0053006100760065007200" Cell1="3100" Cell2="32003000" />
 						<Row No="5" Cell0="530063007200650065006E0053006100760065007200" Cell1="3400" Cell2="38003000" />
-					</DefValue>
-				</Variable>
-				<Variable Name="InformacoesDesconto" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
-					<DefValue RowCount="6" ColumnCount="3">
-						<Columns ColumnName0="Produto" ColumnName1="Quantidade" ColumnName2="Desconto" />
-						<Row No="0" Cell0="4D0079004D006F006E0065007900" Cell1="3100" Cell2="30002500" />
-						<Row No="1" Cell0="4D0079004D006F006E0065007900" Cell1="31003000" Cell2="38002500" />
-						<Row No="2" Cell0="460061006D0069006C00790041006C00620075006D00" Cell1="3100" Cell2="30002500" />
-						<Row No="3" Cell0="460061006D0069006C00790041006C00620075006D00" Cell1="31003000" Cell2="310035002500" />
-						<Row No="4" Cell0="530063007200650065006E0053006100760065007200" Cell1="3100" Cell2="30002500" />
-						<Row No="5" Cell0="530063007200650065006E0053006100760065007200" Cell1="31003000" Cell2="310030002500" />
 					</DefValue>
 				</Variable>
 			</Items>

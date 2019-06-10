@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row3">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{FB5DA973-B553-4616-A100-51EFE988FCB8}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="43626.4776545023"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="name" type="S" value="TesteValidarDescontoPorQuantidade [Script\TestsOrders - TesteValidarDescontoPorQuantidade]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="43626.4775464005"/>
+			</Node>
+			<Node name="row4">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{EFAE1A9B-711F-4C20-A418-003154DFE2FC}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="43626.4777770602"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="name" type="S" value="TesteValidarPrecoTotal [Script\TestsOrders - TesteValidarPrecoTotal]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="43626.4776546181"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{846491EB-1D4B-4852-BCD9-35E34AA89C62}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="43626.4773917824"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="name" type="S" value="TesteCadastroEncomenda [Script\TestsOrders - TesteCadastroEncomenda]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="43626.4773250116"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{7E6E0165-5086-4436-9314-88354FCCEBF9}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="43626.4774706018"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="name" type="S" value="TesteEditarCadastroEncomenda [Script\TestsOrders - TesteEditarCadastroEncomenda]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="43626.4773918981"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{4D290968-202B-4335-87BE-D99EB10D38A4}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="43626.4775464005"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="name" type="S" value="TesteExcluirCadastroEncomenda [Script\TestsOrders - TesteExcluirCadastroEncomenda]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="43626.4774707176"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

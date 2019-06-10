@@ -1,4 +1,4 @@
 ﻿function GerarDataAtual;
 begin  
-  result := aqConvert.DateTimeToFormatStr(aqDateTime.Today, '%m/%d/%Y');
+  result := aqConvert.DateTimeToFormatStr(aqDateTime.Today, '%d/%m/%Y');
 end;

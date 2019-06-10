@@ -5,6 +5,5 @@ end;
 
 procedure AppOrdersClose;
 begin
-  TestedApps.Orders.Close;
-  Aliases.Orders.MainForm.Close;
+  TestedApps.Orders.Terminate;
 end;

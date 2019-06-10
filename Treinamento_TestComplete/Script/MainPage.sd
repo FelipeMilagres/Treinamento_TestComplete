@@ -1,7 +1,34 @@
 ﻿const 
-  MainMenu = Aliases.Orders.MainForm;
+  MainForm = Aliases.Orders.MainForm;
+  Mensagem = Aliases.Orders.Mensagem;
   
 procedure AcessarMenu(pMenu);
 begin
-  MainMenu.MainMenu.Click(pMenu);
+  MainForm.MainMenu.Click(pMenu);
+end;
+
+function PesquisarNomeGrid(pNome);
+var
+  count : int;
+  achou : boolean;
+begin
+  for count := 0 to MainForm.OrdersGrid.wItemCount - 1 do
+    if pNome = MainForm.OrdersGrid.wItem[count, 0] then
+    begin      
+      achou := true; 
+    end; 
+  result := achou;   
+end;
+
+procedure EditarEncomendada(pNome, pProduto, pQuantidade);
+begin
+  MainForm.OrdersGrid.ClickItem(pNome, pProduto, pQuantidade);
+  MainForm.ToolBar.ClickItem(5);  
+end;
+
+procedure ExcluirEncomendada(pNome, pProduto, pQuantidade);
+begin
+  MainForm.OrdersGrid.ClickItem(pNome, pProduto, pQuantidade);
+  MainForm.ToolBar.ClickItem(6);
+  Mensagem.buttonSim.ClickButton;
 end;

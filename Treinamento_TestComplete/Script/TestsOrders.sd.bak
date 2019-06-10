@@ -2,6 +2,7 @@
   AppUtils,  
   MainPage,
   OrderPage,
+  GeradorUtils,
   AssertUtils;  
   
 var
@@ -23,26 +24,106 @@ begin
   end;
   
   //After
-  ClicarCancelar;
   AppOrdersClose;
 end;
 
 procedure TesteValidarDescontoPorQuantidade;
-const
-  InformacoesDesconto = Project.Variables.InformacoesDesconto;
+var
+  ArquivoCSV : OleVariant;
+begin
+  ArquivoCSV := DDT.CSVDriver('C:\Temp\InformacoesDesconto.csv');
+
+  //Before
+  AppOrdersRun;
+  AcessarMenu('Orders|New order...'); 
+  
+  while not ArquivoCSV.EOF do
+  begin
+    EscolherProduto(ArquivoCSV.Value['Produto']);
+    DigitarQuantidade(ArquivoCSV.Value['Quantidade']);  
+    AssertUtils.equals(ArquivoCSV.Value['Desconto'], ObterValorDesconto);
+    ArquivoCSV.Next;
+  end;
+  
+  //After
+  AppOrdersClose;
+end;
+
+procedure TesteCadastroEncomenda;
 begin
   //Before
   AppOrdersRun;
   AcessarMenu('Orders|New order...');
   
-  for count := 0 to InformacoesDesconto.RowCount - 1 do
-  begin
-    EscolherProduto(InformacoesDesconto.Produto[count]);
-    DigitarQuantidade(InformacoesDesconto.Quantidade[count]);  
-    AssertUtils.equals(InformacoesDesconto.Desconto[count], ObterDesconto);
-  end;
+  EscolherProduto('FamilyAlbum');
+  DigitarQuantidade('5');
+  DigitarData(DataAtual);
+  DigitarNome('Felipe');
+  DigitarEndereco('Rua doze');
+  DigitarCidade('Sarzedo');
+  DigitarEstado('Minas');
+  DigitarCEP('32.450-000');  
+  SelecionarCartao('American Express');
+  DigitarNumeroCartao('1111222233334444');
+  DigitarDataExpiracao('15/09/2020');
+  ClicarOK;
+  
+  AssertUtils.isTrue(PesquisarNomeGrid('Felipe'));
   
   //After
-  ClicarCancelar;
+  AppOrdersClose;
+end;
+
+procedure TesteEditarCadastroEncomenda;
+begin
+  //Before
+  AppOrdersRun;
+  AcessarMenu('Orders|New order...');
+  
+  EscolherProduto('FamilyAlbum');
+  DigitarQuantidade('5');
+  DigitarData(DataAtual);
+  DigitarNome('Felipe');
+  DigitarEndereco('Rua doze');
+  DigitarCidade('Sarzedo');
+  DigitarEstado('Minas');
+  DigitarCEP('32.450-000');  
+  SelecionarCartao('American Express');
+  DigitarNumeroCartao('1111222233334444');
+  DigitarDataExpiracao('15/09/2020');
+  ClicarOK;
+  EditarEncomendada('Felipe','FamilyAlbum');
+  DigitarNome('Paulo');
+  ClicarOK;
+  
+  AssertUtils.isTrue(PesquisarNomeGrid('Paulo'));
+  
+  //After
+  AppOrdersClose;
+end;
+
+procedure TesteExcluirCadastroEncomenda;
+begin
+  //Before
+  AppOrdersRun;
+  AcessarMenu('Orders|New order...');
+  
+  EscolherProduto('FamilyAlbum');
+  DigitarQuantidade('5');
+  DigitarData(DataAtual);
+  DigitarNome('Felipe');
+  DigitarEndereco('Rua doze');
+  DigitarCidade('Sarzedo');
+  DigitarEstado('Minas');
+  DigitarCEP('32.450-000');  
+  SelecionarCartao('American Express');
+  DigitarNumeroCartao('1111222233334444');
+  DigitarDataExpiracao('15/09/2020');
+  ClicarOK;
+  ExcluirEncomendada('Felipe', 'FamilyAlbum');
+  
+  AssertUtils.isFalse(PesquisarNomeGrid('Felipe'));
+  
+  //After
   AppOrdersClose;
 end;
