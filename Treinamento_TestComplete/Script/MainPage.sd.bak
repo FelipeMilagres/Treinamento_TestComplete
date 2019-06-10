@@ -20,15 +20,15 @@ begin
   result := achou;   
 end;
 
-procedure EditarEncomendada(pNome, pProduto);
+procedure EditarEncomendada(pNome, pProduto, pQuantidade);
 begin
-  MainForm.OrdersGrid.ClickItem(pNome, pProduto);
+  MainForm.OrdersGrid.ClickItem(pNome, pProduto, pQuantidade);
   MainForm.ToolBar.ClickItem(5);  
 end;
 
-procedure ExcluirEncomendada(pNome, pProduto);
+procedure ExcluirEncomendada(pNome, pProduto, pQuantidade);
 begin
-  MainForm.OrdersGrid.ClickItem(pNome, pProduto);
+  MainForm.OrdersGrid.ClickItem(pNome, pProduto, pQuantidade);
   MainForm.ToolBar.ClickItem(6);
   Mensagem.buttonSim.ClickButton;
 end;

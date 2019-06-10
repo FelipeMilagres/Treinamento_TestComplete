@@ -23,38 +23,38 @@
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="43626.4736314583"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{AB6FC236-767A-49DB-AFD8-18BE969E2B3F}"/>
-				<Prp name="nameofroot" type="S" value="Testes Tela New Order"/>
-				<Prp name="relpath" type="S" value="10_06_2019_11_22_01_758\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
-			</Node>
-			<Node name="log idx=0001">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="43626.4759533796"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{EFD96B83-7D38-4E87-96C0-375AEB0CD3AD}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [GravadorUtils\Test1]"/>
-				<Prp name="relpath" type="S" value="10_06_2019_11_25_22_372\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
-			</Node>
-			<Node name="log idx=0002">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="43626.4771178472"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{8D073538-FC69-45AB-A30F-0353887675CB}"/>
-				<Prp name="nameofroot" type="S" value="Testes Tela New Order"/>
-				<Prp name="relpath" type="S" value="10_06_2019_11_27_02_982\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0003">
-				<Prp name="caption" type="S" value=""/>
 				<Prp name="datetime" type="D" value="43626.4773245486"/>
 				<Prp name="description" type="S" value=""/>
 				<Prp name="key" type="S" value="{19B95457-4562-4BD4-937E-6B7B951EA848}"/>
 				<Prp name="nameofroot" type="S" value="Testes Tela New Order"/>
 				<Prp name="relpath" type="S" value="10_06_2019_11_27_20_841\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43626.5339561111"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{6D34476B-D6C0-47AA-93AE-CC37B387CE3C}"/>
+				<Prp name="nameofroot" type="S" value="Testes - Tela Nova Encomenda"/>
+				<Prp name="relpath" type="S" value="10_06_2019_12_48_53_808\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43626.5360108449"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{4B9F1510-7551-4139-B8AA-465C96766BC7}"/>
+				<Prp name="nameofroot" type="S" value="Testes - Tela Nova Encomenda"/>
+				<Prp name="relpath" type="S" value="10_06_2019_12_51_51_337\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43626.5848306944"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{55BFAC4F-0BA7-4F9F-86B2-4EC43EAC13AB}"/>
+				<Prp name="nameofroot" type="S" value="Testes - Tela Nova Encomenda"/>
+				<Prp name="relpath" type="S" value="10_06_2019_14_02_09_372\Description.tcLog"/>
 				<Prp name="status" type="I" value="0"/>
 			</Node>
 		</Node>

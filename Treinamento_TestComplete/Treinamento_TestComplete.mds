@@ -9,26 +9,26 @@
 	<config language="{9E432E59-33EF-4EAA-95C6-63FC35AF69EE}" />
 	<testItems key="{DC592372-12C3-4AE9-AD8D-656B0474A98B}" version="14">
 		<children>
-			<testItem name="Testes Tela New Order" key="{5E0615F8-C3A3-41AB-BB30-4C7A79A5D8C3}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="Testes - Tela Nova Encomenda" key="{2FD63502-66B3-4A83-97B2-3F38DCC1DD0E}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
-					<testItem name="TesteCadastroEncomenda" key="{4458EED8-5FFE-4DAD-A1A4-C006825ACFCC}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteCadastroEncomenda" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="TesteCadastroEncomenda" key="{8197FB30-8A35-4F27-A5F7-A62F160E9A9D}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteCadastroEncomenda" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TesteEditarCadastroEncomenda" key="{C0096B9E-10E9-4C72-8C1A-60A8A673AE11}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteEditarCadastroEncomenda" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="TesteEditarCadastroEncomenda" key="{4D10ADD2-23BB-4883-A460-601034840EEC}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteEditarCadastroEncomenda" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TesteExcluirCadastroEncomenda" key="{87337AA4-67DF-449A-AA0E-A4DC6CF3DA16}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteExcluirCadastroEncomenda" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="TesteExcluirCadastroEncomenda" key="{BF82883B-A40A-42AD-9AA5-96477EA59AC0}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteExcluirCadastroEncomenda" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TesteValidarDescontoPorQuantidade" key="{26A2C21F-C8B0-4F70-BAFA-70B29585F6AF}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteValidarDescontoPorQuantidade" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="TesteValidarDescontoPorQuantidade" key="{0CC678E2-5DDA-4EE0-AC7C-314ADFB40831}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteValidarDescontoPorQuantidade" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TesteValidarPrecoTotal" key="{DC77244F-8E4C-452E-BBAA-F1AE623D3930}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteValidarPrecoTotal" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="TesteValidarPrecoTotal" key="{27E575E2-B593-45B8-98A8-C3BC3800D185}" group="False" enabled="True" testMoniker="{87E8530A-7B54-4088-A981-16FB3BABE08A}TesteValidarPrecoTotal" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children />
 					</testItem>
@@ -39,7 +39,7 @@
 	<variables key="{77834127-2878-4E02-88AD-406ABA4A3C06}">
 		<data Version="3">
 			<Items>
-				<Variable Name="InformacoesProdutos" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
+				<Variable Name="InformacoesProdutos" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False" Descr="Tabela com as informações do produto">
 					<DefValue RowCount="6" ColumnCount="3">
 						<Columns ColumnName0="Produto" ColumnName1="Quantidade" ColumnName2="ValorTotal" />
 						<Row No="0" Cell0="4D0079004D006F006E0065007900" Cell1="3100" Cell2="310030003000" />

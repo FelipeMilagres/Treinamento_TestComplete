@@ -1,13 +1,9 @@
-﻿uses
-  AppUtils;
-
-procedure equals(pValorUm, pValorDois);
+﻿procedure equals(pValorUm, pValorDois);
 begin
   if aqConvert.VarToStr(pValorUm) = aqConvert.VarToStr(pValorDois) then  
     Log.Checkpoint('O '+pValorUm+' é igual a '+pValorDois+'!')    
   else
     Log.Error('O '+pValorUm+' não é igual a '+pValorDois+'!')   ;
-  AppUtils.AppOrdersClose;
 end;
 
 procedure isTrue(pCondicao);
@@ -16,7 +12,6 @@ begin
     Log.Checkpoint('A condição é verdadeira!')
   else
     Log.Error('A condição é falsa!');
-  AppUtils.AppOrdersClose;
 end;
 
 procedure isFalse(pCondicao);
@@ -25,5 +20,5 @@ begin
     Log.Checkpoint('A condição é falsa!')
   else
     Log.Error('A condição é verdadeira!');
-  AppUtils.AppOrdersClose;
 end;
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The object &quot;ProductNames&quot; does not exist."/>
+							</Node>
+						</Node>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBCADQARAA0AEQAOQBCADQALQA0ADQAQwA2AC0ANABFADcAMQAtADkAQgBBADcALQAxAEUANgA1ADAAOQA2ADAARgBFAEEANQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="14922"/>
+						<Prp name="starttime" type="D" value="43626.5341859491"/>
+						<Prp name="name" type="S" value="TesteValidarDescontoPorQuantidade"/>
+						<Prp name="durationwithoutchildren" type="I" value="14922"/>
+						<Prp name="status" type="I" value="2"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA4ADgANwBGAEMAMQAxAEEALQA2ADQAOAAxAC0ANAA3ADEARQAtADkAMAA5AEIALQBFADUAMgA0ADMAQwBCAEYANABFAEYAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="6236"/>
+						<Prp name="starttime" type="D" value="43626.5341137731"/>
+						<Prp name="name" type="S" value="TesteExcluirCadastroEncomenda"/>
+						<Prp name="durationwithoutchildren" type="I" value="6236"/>
+						<Prp name="status" type="I" value="0"/>
+					</Node>
+					<Node name="test4">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="There is (are) 1 running instance(s) of &quot;C:\Users\Public\Documents\TestComplete 14 Samples\Desktop\Orders\C#\bin\Release\Orders.exe&quot;. New instances will not be launched."/>
+							</Node>
+						</Node>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA4ADQARAAxAEUANgBBADAALQAwADgAOAAwAC0ANAA1ADcAQwAtAEIANgA2ADkALQBCAEMAQQBCAEQARQA0AEYANgAwADUAMQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="7427"/>
+						<Prp name="starttime" type="D" value="43626.5343586574"/>
+						<Prp name="name" type="S" value="TesteValidarPrecoTotal"/>
+						<Prp name="durationwithoutchildren" type="I" value="7427"/>
+						<Prp name="status" type="I" value="1"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyADAAQwAzAEIANQBDAEEALQA2ADgANgA0AC0ANAA2ADQAQgAtAEIAMQBDAEQALQAzADQANwA5ADkARgBGADgANgA2AEUAMwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="6663"/>
+						<Prp name="starttime" type="D" value="43626.5340366551"/>
+						<Prp name="name" type="S" value="TesteEditarCadastroEncomenda"/>
+						<Prp name="durationwithoutchildren" type="I" value="6663"/>
+						<Prp name="status" type="I" value="0"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBGADAAQwBBAEYAQgBFADMALQA1AEUANQBCAC0ANAA3ADkAQQAtADkAMQA0AEUALQA4AEIAMgA4ADMARAA2ADIAOQAyADcAMgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="6850"/>
+						<Prp name="starttime" type="D" value="43626.5339573727"/>
+						<Prp name="name" type="S" value="TesteCadastroEncomenda"/>
+						<Prp name="durationwithoutchildren" type="I" value="6850"/>
+						<Prp name="status" type="I" value="0"/>
+					</Node>
+				</Node>
+				<Prp name="failedtests" type="I" value="1"/>
+				<Prp name="name" type="S" value="Treinamento_TestComplete"/>
+				<Prp name="duration" type="I" value="42098"/>
+				<Prp name="starttime" type="D" value="43626.5339573727"/>
+			</Node>
+		</Node>
+		<Prp name="warningtests" type="I" value="1"/>
+		<Prp name="failedtests" type="I" value="1"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="stop" type="D" value="43626.5344473958"/>
+		<Prp name="name" type="S" value="Treinamento_TestComplete"/>
+		<Prp name="key" type="S" value="{D8867B42-557B-4B28-A219-E513996C0B50}"/>
+		<Prp name="testname" type="S" value="Treinamento_TestComplete"/>
+		<Prp name="user" type="S" value="Felipe"/>
+		<Prp name="host" type="S" value="FELIPE"/>
+		<Prp name="starttime" type="D" value="43626.5339562847"/>
+		<Prp name="tests" type="I" value="5"/>
+	</Node>
+</Nodes>
